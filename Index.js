@@ -20,4 +20,9 @@ app.get('/Car',(req,res)=>{
     const jsoncar=JSON.stringify(Car)
     res.send(jsoncar)
 })
+app.post('/Add',(req,res)=>
+{
+    res.send('Car Added');
+})
+
 app.listen(3000);
