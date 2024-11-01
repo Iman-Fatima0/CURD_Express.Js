@@ -20,9 +20,17 @@ app.get('/Car',(req,res)=>{
     const jsoncar=JSON.stringify(Car)
     res.send(jsoncar)
 })
-app.post('/Add',(req,res)=>
+app.post('/AddCar',(req,res)=>
 {
     res.send('Car Added');
 })
+app.put('/UpdateCar',(req,res)=>
+    {
+        res.send('Car Update Success');
+    })
+    app.delete('/DeleteCar',(req,res)=>
+        {
+            res.send('Car Deleted Success');
+        })
 
 app.listen(3000);
