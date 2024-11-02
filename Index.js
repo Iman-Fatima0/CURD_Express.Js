@@ -26,11 +26,11 @@ app.post('/AddCar',(req,res)=>
 })
 app.put('/UpdateCar',(req,res)=>
     {
-        res.send('Car Update Success');
+        res.status(404).send('Car Update Success');
     })
     app.delete('/DeleteCar',(req,res)=>
         {
-            res.send('Car Deleted Success');
+            res.status(200).send('Car Deleted Success');
         })
 
 app.listen(3000);
